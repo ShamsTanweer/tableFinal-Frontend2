@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: 2px solid black;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+      .flex-container {
+        display: flex;
+        width: 700px;
+        margin: 10px;
+        justify-content: space-between;
+      }
+
+      .btn {
+        margin: 5px;
+        border-radius: 4px;
+        background-color: #e1ecf4;
+        border-radius: 3px;
+        border: 1px solid #7aa7c7;
+        box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+        box-sizing: border-box;
+        color: #39739d;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+          sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.15385;
+        margin: 0;
+        outline: none;
+        padding: 8px 0.8em;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="search" type="text" />
+    <button class="btn" id="searchBtn">Search</button>
+
+    <div class="flex-container">
+      <button class="btn" id="sortAZ">Sort A→Z</button>
+      <button class="btn" id="sortZA">Sort Z→A</button>
+      <button class="btn" id="markSort">Sort by Marks</button>
+      <button class="btn" id="sortPassing">Sort by Passing</button>
+      <button class="btn" id="sortClass">Sort by Class</button>
+      <button class="btn" id="sortGender">Sort by Gender</button>
+    </div>
+
+    <table class="products"></table>
+
+    <table class="products"></table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
